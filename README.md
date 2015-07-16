@@ -1,0 +1,1 @@
+# codenvy-sbt-launch-example
