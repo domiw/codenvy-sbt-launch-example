@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="zip" name="CodenvySbtLaunchExample">
+   <property name="name" value="CodenvySbtLaunchExample" />
+   <property location="${basedir}/src" name="src.dir" />
+   <property location="${basedir}/sbt" name="sbt.dir" />
+   <target name="zip">
+      <zip destfile="${name}.zip">
+        <zipfileset dir="${src.dir}" prefix="src"/>
+        <zipfileset dir="${sbt.dir}" prefix="sbt"/>
+        <file name="build.sbt"/>
+     	</zip>
+   </target>
+</project>
